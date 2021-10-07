@@ -7,7 +7,12 @@ header('Content-Type: text/html; charset=utf-8');
  * CONTROLLER BLOCK + MODEL BLOCK
  * В этой части идёт создание и обработка PHP кода
  */
-$title = 'Домашняя работа';
+$title = 'Домашняя работа php 04';
+
+$haystack = 'one two three';
+$needle = 'two';
+$result = strpos($haystack, $needle);
+var_dump($result);
 
 /*
  * VIEW BLOCK / Вид сайта
@@ -18,13 +23,8 @@ $title = 'Домашняя работа';
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $title; ?>></title>
+    <title><?php echo $title; ?></title>
+
 </head>
 <body>
-<h1><?php echo $title; ?></h1>
-<a href="01/">Домашняя работа 1</a><br>
-<a href="02/">Домашняя работа 2</a><br>
-<a href="03/">Домашняя работа 3</a><br>
-<a href="04/">Домашняя работа 4</a><br>
 </body>
-</html>
